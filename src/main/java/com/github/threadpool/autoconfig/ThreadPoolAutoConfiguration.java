@@ -99,5 +99,5 @@ public class ThreadPoolAutoConfiguration {
         return threadPoolExecutor;
     }
 
-    private static final ThreadFactory DEFAULT_THREAD_FACTORY = r -> new Thread();
+    private static final ThreadFactory DEFAULT_THREAD_FACTORY = Thread::new;
 }
